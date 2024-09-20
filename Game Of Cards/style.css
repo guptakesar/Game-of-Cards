@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+
+.card{
+   /* We can use the below 4 properties in case of diapay align justify */
+    /*  position : absolute; means that now it has it own properties and do not depend on its parent class */
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 230px;
+    border: 1px solid black;
+    border-radius:10% ;
+    background-color: green;
+    overflow: hidden;
+}
+
+#card1{
+    /* z-index is used to tell greater the z-index closer it is to the screen */
+    z-index: 4; 
+}
+
+#card2{
+    z-index: 3;
+    transform: translate(-50%,-50%); rotate: -6deg;
+     background-color: blue;
+}
+
+#card3{
+    z-index: 2;
+    transform: translate(-50%,-50%); rotate: -12deg;
+    background-color: pink;
+}
+
+#card4{
+    z-index: 1;
+    transform: translate(-50%,-50%); rotate: -18deg;
+    background-color: aqua;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Or we can write Overflow Hidden in card */
+    /* border-radius:10% ;  */
+
+}
+
+#card4:hover{
+    z-index: 10;
+}
+
+#card2:hover{
+    z-index: 10;
+}
+
+#card3:hover{
+    z-index: 10;
+}
